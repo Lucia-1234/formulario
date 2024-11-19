@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <section>
+    <form action="index.html" method="get"></form>
+    <ul>
+      <h1>TODOS LOS CAMPOS SON OBLIGATORIOS, EL FORMULARIO SOLO SE PUEDE ENVIAR CUANDO SE CUMPLAN TODAS LAS CONDICIONES.
+      </h1>
+      <div>
+        <h2>Ingrese su nombre en este campo</h2>
+        <input type="text" name="Nombre" placeholder="Nombre" required>
+      </div>
+      <div>
+        <h2>Ingrese su apellido en etse campo</h2>
+        <input type="text" name="apellido" placeholder="Apellido" pattern="[a-z]+" required>
+      </div>
+      <div>
+        <h2>Elija su color favorito</h2>
+        <input type="color" name="color" required>
+      </div>
+      <div>
+        <h2>Escriba su edad</h2>
+        <input type="number" name="edad" min="0" placeholder="Edad" required>
+      </div>
+      <div>
+        <h2>Diligencie números</h2>
+        <input type="text" name="números" pattern="\d+" required>
+      </div>
+      <div>
+        <h2>Ingrese números positivos</h2>
+        <input type="number" name="números" min="0" placeholder="positivos" required>
+      </div>
+      <div>
+        <h2>Minimo - Maximo</h2>
+        <input type="number" name="Minimo_maximo" value="15" step="0.5" min="10" max="20" required>
+      </div>
+      <div>
+        <h2>Fecha de nacimiento</h2>
+        <input type="date" name="Fecha" placeholder="fecha de nacimiento" required>
+      </div>
+      <div>
+        <h2>Ingresre la hora</h2>
+        <input type="time" name="hora" placeholder="Hora" required>
+      </div>
+      <div>
+        <h2>selecione su ciudad</h2>
+        <select name="ciudad" id="ciudad" required>
+          <option>selecione</option>
+          <option>Bucamanaga</option>
+          <option>Barranquilla</option>
+          <option>Bogota</option>
+          <option>Cali</option>
+          <option>Medellin</option>
+        </select>
+      </div>
+      <div>
+        <h2>Genero</h2>
+        <select name="genero" id="genero" required>
+          <option>Selecione</option>
+          <option>Femenino</option>
+          <option>Masculino</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div>
+        <h2>Materias</h2>
+        <label for="Genero"></label>
+        <select name="materias" id="materias">
+          <option>Selecione</option>
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JS</option>
+          <option>JAVA</option>
+          <option>PYTHON</option>
+          <option>PHP</option>
+        </select>
+      </div>
+      <div>
+        <h2>Archivos</h2>
+        <input type="file" name="Archivos" placeholder="Archivos" accept=".jpg, .png" multiple required>
+      </div>
+      <div>
+        <h2>Ingrese una contraseña</h2>
+        <input type="password" name="contraseña" placeholder="contraseña" required>
+      </div>
+      <div>
+        <h2>Nombre aprendiz</h2>
+        <input type="text" value="Adriana Lucia Lizcano Almeida" disabled>
+      </div>
+      <div>
+        <button type="button">Validar formulario</button>
+      </div>
+    </ul>
+  </section>
+</body>
+
+</html>
